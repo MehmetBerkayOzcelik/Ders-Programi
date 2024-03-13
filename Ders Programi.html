@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- MEHMET BERKAY OZCELIK-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ders Çalışma Programı</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DERS CALISMA PROGRAMI</h1>
+    <h3>Ders Ekle</h3>
+<form id="calismaProgrami">
+    <label for="dersAdi">Ders Adı:</label>
+    <input type="text" id="dersAdi" name="dersAdi" required>
+
+    <label for="calismaSuresi">Günlük Çalışma Süresi (dakika):</label>
+    <input type="number" id="calismaSuresi" name="calismaSuresi" required>
+
+    <label for="tarih">Tarih</label>
+    <input type="date" id="tarih" name="tarih">
+
+    <input type="submit" value="Kaydet">
+</form>
+<h2 id="haftalikDersProgramiClick" onclick="dersProgramiAc()">Haftalık Ders Programı </h2>
+<ul id="haftalikDersProgrami" class="haftalikDers">
+    <h3>Pazartesi</h3>
+    <ul id="pazartesiListesi" class="gunListesi"></ul>
+    <h3>Salı</h3>
+    <ul id="saliListesi" class="gunListesi"></ul>
+    <h3>Çarşamba</h3>
+    <ul id="carsambaListesi" class="gunListesi"></ul>
+    <h3>Perşembe</h3>
+    <ul id="persembeListesi" class="gunListesi"></ul>
+    <h3>Cuma</h3></body>
+    <ul id="cumaListesi" class="gunListesi"></ul>
+    <h3>Cumartesi</h3>
+    <ul id="cumartesiListesi" class="gunListesi"></ul>
+    <h3>Pazar</h3>
+    <ul id="pazarListesi" class="gunListesi"></ul>
+</ul>
+<div onclick="calisilanDersAc()"  class="div">
+    <h2 class="baslik-sol">Çalışılan Dersler</h2>
+    <h2 class="baslik-sag" id="calisilandk">Toplam Dakika : 0 </h2>
+</div>
+<ul id="calisilanDersListesi" class="gunListesi"></ul>
+
+<script src="app.js"></script>
+<!-- MEHMET BERKAY OZCELIK-->
+</body>
+</html>
